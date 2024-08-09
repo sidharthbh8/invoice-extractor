@@ -54,7 +54,6 @@ async function getDetails(filePath) {
       
       Text: ${extractedData}
     `;
-    console.log(prompt);
     const model = genAI.getGenerativeModel({ model: "gemini-pro"});
     const result = await model.generateContent(prompt);
     const response = result.response;
@@ -66,8 +65,8 @@ async function getDetails(filePath) {
   }
 }
 
-const filePath = 'SampleInvoiceImage.png';
+// const filePath = 'SampleInvoiceImage.png';
 // const filePath = 'SampleInvoice.pdf';
-// const filePath = 'SampleInvoice2.pdf';
+const filePath = 'SampleInvoice2.pdf';
 
 getDetails(filePath);
