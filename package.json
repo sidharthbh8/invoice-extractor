@@ -1,0 +1,19 @@
+{
+  "name": "invoice-extractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.16.0",
+    "dotenv": "^16.4.5",
+    "openai": "^4.55.3",
+    "pdf-parse": "^1.1.1",
+    "tesseract.js": "^5.1.0"
+  }
+}
